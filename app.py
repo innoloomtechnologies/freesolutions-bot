@@ -36,5 +36,7 @@ if __name__ == '__main__':
     # Set webhook for Telegram
     bot.set_webhook(url=f'https://freesolutions-bot.onrender.com/7478446385:AAGo-VeOv2cBttUP3z4ev4ytCD6bUbJ610M')
 
-    # Run Flask app
-    app.run(debug=True)
+    import os
+    host = '0.0.0.0'
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host=host, port=port)
