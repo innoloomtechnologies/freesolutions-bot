@@ -34,7 +34,7 @@ dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 # Main entry point
 if __name__ == '__main__':
     # Set webhook for Telegram
-    bot.set_webhook(url=f'https://yourdomain.com/7478446385:AAGo-VeOv2cBttUP3z4ev4ytCD6bUbJ610M')
+    bot.set_webhook(url=f'https://freesolutions-bot.onrender.com/7478446385:AAGo-VeOv2cBttUP3z4ev4ytCD6bUbJ610M')
 
     # Run Flask app
     app.run(debug=True)
